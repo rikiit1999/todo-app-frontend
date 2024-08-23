@@ -11,15 +11,16 @@
     background-color: #f9f9f9;
 }
 
-.input-field {
-    width: 100%;
+.login-form .input-field {
+    width: 100%; /* Đảm bảo input-field chiếm hết chiều rộng của form */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng thực tế của input */
 }
 
-.submit-button {
+.login-form .submit-button {
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
@@ -27,9 +28,9 @@
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    width: 100%;
+    width: 100%; /* Đảm bảo button chiếm hết chiều rộng của form */
 }
 
-.submit-button:hover {
+.login-form .submit-button:hover {
     background-color: #45a049;
 }
